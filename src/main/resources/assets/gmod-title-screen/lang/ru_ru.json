@@ -1,0 +1,22 @@
+{
+  "menu.gmod-title-screen.singleplayer": "Начать новую игру",
+  "menu.gmod-title-screen.multiplayer": "Сетевая игра",
+  "menu.gmod-title-screen.options": "Настройки",
+  "menu.gmod-title-screen.modmenu": "Аддоны",
+  "menu.gmod-title-screen.modmenu.not-installed": "Скачайте мод меню, чтобы использовать это!",
+  "menu.gmod-title-screen.dupes": "Дюпы",
+  "menu.gmod-title-screen.demos": "Демо",
+  "menu.gmod-title-screen.saves": "Сохранения",
+  "menu.gmod-title-screen.quit": "Выйти",
+  "menu.gmod-title-screen.version": "Сейчас вы используете minecraft-%s branch. Нажмите сюда, чтобы узнать большее. ( %s )",
+
+  "title.gmod-title-screen.config": "GMod Title Screen Конфиг",
+
+  "category.gmod-title-screen.general": "Основные",
+
+  "text.autoconfig.gmod-title-screen.title": "GMod Title Screen Конфиг",
+  "text.autoconfig.gmod-title-screen.option.showGModLogo": "Показывать GMod логотип",
+  "text.autoconfig.gmod-title-screen.option.showSplashText": "Показывать сплеши",
+  "text.autoconfig.gmod-title-screen.option.showGModLogo.@Tooltip[0]": "Показывать иконку GMod вместо иконки Minecraft",
+  "text.autoconfig.gmod-title-screen.option.showGModLogo.@Tooltip[1]": "сделайте это более интересным"
+}

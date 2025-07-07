@@ -1,0 +1,24 @@
+{
+  "menu.gmod-title-screen.singleplayer": "Worlds",
+  "menu.gmod-title-screen.multiplayer": "Servers",
+  "menu.gmod-title-screen.options": "Settings",
+  "menu.gmod-title-screen.modmenu": "Mods",
+  "menu.gmod-title-screen.modmenu.not-installed": "Install Mod Menu to use this!",
+  "menu.gmod-title-screen.dupes": "Dupes",
+  "menu.gmod-title-screen.demos": "Demos",
+  "menu.gmod-title-screen.saves": "Saves",
+  "menu.gmod-title-screen.quit": "Quit Game",
+  "menu.gmod-title-screen.realms": "Realms",
+  "menu.gmod-title-screen.version": "You are on the minecraft-%s branch. Click here to find out more. ( %s )",
+  "menu.gmod-title-screen.accessibility": "Accessibility Options",
+
+  "title.gmod-title-screen.config": "GMod Title Screen Config",
+
+  "category.gmod-title-screen.general": "General",
+
+  "text.autoconfig.gmod-title-screen.title": "GMod Title Screen Config",
+  "text.autoconfig.gmod-title-screen.option.showGModLogo": "Show GMod logo",
+  "text.autoconfig.gmod-title-screen.option.showSplashText": "Show splash text",
+  "text.autoconfig.gmod-title-screen.option.showGModLogo.@Tooltip[0]": "Show the GMod logo instead of Minecraft's to",
+  "text.autoconfig.gmod-title-screen.option.showGModLogo.@Tooltip[1]": "make it more obvious"
+}
