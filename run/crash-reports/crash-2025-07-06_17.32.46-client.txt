@@ -7,8 +7,8 @@ Description: Rendering overlay
 java.lang.IllegalStateException: GameOptions has already been initialised
 	at knot//net.fabricmc.fabric.impl.client.keybinding.KeyBindingRegistryImpl.registerKeyBinding(KeyBindingRegistryImpl.java:56)
 	at knot//net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper.registerKeyBinding(KeyBindingHelper.java:51)
-	at knot//zone.oat.gmodtitlescreen.GuiLessScreenshotMod.onInitializeClient(GuiLessScreenshotMod.java:45)
-	at knot//zone.oat.gmodtitlescreen.screen.CustomTitleScreen.init(CustomTitleScreen.java:227)
+	at knot//net.kazohy.guioverhaul.GuiLessScreenshotMod.onInitializeClient(GuiLessScreenshotMod.java:45)
+	at knot//screen.net.kazohy.guioverhaul.CustomTitleScreen.init(CustomTitleScreen.java:227)
 	at knot//net.minecraft.client.gui.screen.Screen.init(Screen.java:308)
 	at knot//net.minecraft.client.gui.screen.SplashOverlay.render(SplashOverlay.java:142)
 	at knot//net.minecraft.client.render.GameRenderer.render(GameRenderer.java:540)
@@ -29,8 +29,8 @@ Thread: Render thread
 Stacktrace:
 	at knot//net.fabricmc.fabric.impl.client.keybinding.KeyBindingRegistryImpl.registerKeyBinding(KeyBindingRegistryImpl.java:56)
 	at knot//net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper.registerKeyBinding(KeyBindingHelper.java:51)
-	at knot//zone.oat.gmodtitlescreen.GuiLessScreenshotMod.onInitializeClient(GuiLessScreenshotMod.java:45)
-	at knot//zone.oat.gmodtitlescreen.screen.CustomTitleScreen.init(CustomTitleScreen.java:227)
+	at knot//net.kazohy.guioverhaul.GuiLessScreenshotMod.onInitializeClient(GuiLessScreenshotMod.java:45)
+	at knot//screen.net.kazohy.guioverhaul.CustomTitleScreen.init(CustomTitleScreen.java:227)
 	at knot//net.minecraft.client.gui.screen.Screen.init(Screen.java:308)
 	at knot//net.minecraft.client.gui.screen.SplashOverlay.render(SplashOverlay.java:142)
 
@@ -73,8 +73,8 @@ Details:
 	Recovery reason: java.lang.IllegalStateException: GameOptions has already been initialised
 	at knot//net.fabricmc.fabric.impl.client.keybinding.KeyBindingRegistryImpl.registerKeyBinding(KeyBindingRegistryImpl.java:56)
 	at knot//net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper.registerKeyBinding(KeyBindingHelper.java:51)
-	at knot//zone.oat.gmodtitlescreen.GuiLessScreenshotMod.onInitializeClient(GuiLessScreenshotMod.java:45)
-	at knot//zone.oat.gmodtitlescreen.screen.CustomTitleScreen.init(CustomTitleScreen.java:227)
+	at knot//net.kazohy.guioverhaul.GuiLessScreenshotMod.onInitializeClient(GuiLessScreenshotMod.java:45)
+	at knot//screen.net.kazohy.guioverhaul.CustomTitleScreen.init(CustomTitleScreen.java:227)
 	at knot//net.minecraft.client.gui.screen.Screen.init(Screen.java:308)
 	at knot//net.minecraft.client.MinecraftClient.setScreen(MinecraftClient.java:1192)
 	at knot//net.minecraft.client.MinecraftClient.redirect$zmb000$gmod-title-screen$injected(MinecraftClient.java:6061)

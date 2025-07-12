@@ -28,9 +28,9 @@ Current thread (0x00007a86f8030730):  JavaThread "Render thread"        [_thread
 Stack: [0x00007a86fe900000,0x00007a86fea00000],  sp=0x00007a86fe9fdd90,  free space=1015k
 Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
 J 15259 c2 net.minecraft.client.gui.DrawContext.drawTexturedQuad(Ljava/util/function/Function;Lnet/minecraft/util/Identifier;IIIIFFFFI)V (166 bytes) @ 0x00007a86e87fb5d4 [0x00007a86e87faf40+0x0000000000000694]
-J 15269% c2 zone.oat.gmodtitlescreen.screen.CustomTitleScreen.renderBackground(Lnet/minecraft/client/gui/DrawContext;IIF)V (183 bytes) @ 0x00007a86e87fdd0c [0x00007a86e87fdbc0+0x000000000000014c]
+J 15269% c2 screen.net.kazohy.guioverhaul.CustomTitleScreen.renderBackground(Lnet/minecraft/client/gui/DrawContext;IIF)V (183 bytes) @ 0x00007a86e87fdd0c [0x00007a86e87fdbc0+0x000000000000014c]
 j  net.minecraft.client.gui.screen.Screen.render(Lnet/minecraft/client/gui/DrawContext;IIF)V+6
-j  zone.oat.gmodtitlescreen.screen.CustomTitleScreen.render(Lnet/minecraft/client/gui/DrawContext;IIF)V+6
+j  screen.net.kazohy.guioverhaul.CustomTitleScreen.render(Lnet/minecraft/client/gui/DrawContext;IIF)V+6
 j  net.minecraft.client.gui.screen.SplashOverlay.render(Lnet/minecraft/client/gui/DrawContext;IIF)V+128
 j  net.minecraft.client.render.GameRenderer.render(Lnet/minecraft/client/render/RenderTickCounter;Z)V+561
 j  net.minecraft.client.MinecraftClient.render(Z)V+406
@@ -342,7 +342,7 @@ Compiled method (c2) 13243 15259       4       net.minecraft.client.gui.DrawCont
                       ;*invokeinterface computeIfAbsent {reexecute=0 rethrow=0 return_oop=1}
                       ; - net.minecraft.util.Util$2::apply@9 (line 1005)
                       ; - net.minecraft.client.render.RenderLayer::getGuiTextured@4 (line 1100)
-                      ; - zone.oat.gmodtitlescreen.screen.CustomTitleScreen$$Lambda/0x00007a867fe3b180::apply@4
+                      ; - screen.net.kazohy.guioverhaul.CustomTitleScreen$$Lambda/0x00007a867fe3b180::apply@4
                       ; - net.minecraft.client.gui.DrawContext::drawTexturedQuad@2 (line 449)
   0x00007a86e87fafe4: 4811 fdff 
 
@@ -826,7 +826,7 @@ Compiled method (c2) 13243 15259       4       net.minecraft.client.gui.DrawCont
                       ;*invokeinterface computeIfAbsent {reexecute=0 rethrow=0 return_oop=0}
                       ; - net.minecraft.util.Util$2::apply@9 (line 1005)
                       ; - net.minecraft.client.render.RenderLayer::getGuiTextured@4 (line 1100)
-                      ; - zone.oat.gmodtitlescreen.screen.CustomTitleScreen$$Lambda/0x00007a867fe3b180::apply@4
+                      ; - screen.net.kazohy.guioverhaul.CustomTitleScreen$$Lambda/0x00007a867fe3b180::apply@4
                       ; - net.minecraft.client.gui.DrawContext::drawTexturedQuad@2 (line 449)
   0x00007a86e87fc2b4: 288f 18ff 
 
@@ -1554,7 +1554,7 @@ Compiled method (c2) 13243 15259       4       net.minecraft.client.gui.DrawCont
   0x00007a86e87fd4d8: ; ImmutableOopMap {rbp=Oop [24]=Oop }
                       ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
                       ; - net.minecraft.client.render.RenderLayer::getGuiTextured@9 (line 1100)
-                      ; - zone.oat.gmodtitlescreen.screen.CustomTitleScreen$$Lambda/0x00007a867fe3b180::apply@4
+                      ; - screen.net.kazohy.guioverhaul.CustomTitleScreen$$Lambda/0x00007a867fe3b180::apply@4
                       ; - net.minecraft.client.gui.DrawContext::drawTexturedQuad@2 (line 449)
   0x00007a86e87fd4d8: 047d 18ff 
 
@@ -1592,7 +1592,7 @@ Compiled method (c2) 13243 15259       4       net.minecraft.client.gui.DrawCont
                       ;*invokeinterface computeIfAbsent {reexecute=0 rethrow=0 return_oop=0}
                       ; - net.minecraft.util.Util$2::apply@9 (line 1005)
                       ; - net.minecraft.client.render.RenderLayer::getGuiTextured@4 (line 1100)
-                      ; - zone.oat.gmodtitlescreen.screen.CustomTitleScreen$$Lambda/0x00007a867fe3b180::apply@4
+                      ; - screen.net.kazohy.guioverhaul.CustomTitleScreen$$Lambda/0x00007a867fe3b180::apply@4
                       ; - net.minecraft.client.gui.DrawContext::drawTexturedQuad@2 (line 449)
   0x00007a86e87fd548: 947c 18ff 
 
@@ -1606,7 +1606,7 @@ Compiled method (c2) 13243 15259       4       net.minecraft.client.gui.DrawCont
   0x00007a86e87fd580: ; ImmutableOopMap {rbp=Oop }
                       ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
                       ; - net.minecraft.client.render.RenderLayer::getGuiTextured@9 (line 1100)
-                      ; - zone.oat.gmodtitlescreen.screen.CustomTitleScreen$$Lambda/0x00007a867fe3b180::apply@4
+                      ; - screen.net.kazohy.guioverhaul.CustomTitleScreen$$Lambda/0x00007a867fe3b180::apply@4
                       ; - net.minecraft.client.gui.DrawContext::drawTexturedQuad@2 (line 449)
   0x00007a86e87fd580: 5c7c 18ff 
 
@@ -1881,7 +1881,7 @@ Compiled method (c2) 13243 15259       4       net.minecraft.client.gui.DrawCont
 [/MachCode]
 
 
-Compiled method (c2) 13268 15269 %     4       zone.oat.gmodtitlescreen.screen.CustomTitleScreen::renderBackground @ 139 (183 bytes)
+Compiled method (c2) 13268 15269 %     4       screen.net.kazohy.guioverhaul.CustomTitleScreen::renderBackground @ 139 (183 bytes)
  total in heap  [0x00007a86e87fda88,0x00007a86e87fde10] = 904
  relocation     [0x00007a86e87fdb60,0x00007a86e87fdb98] = 56
  constants      [0x00007a86e87fdba0,0x00007a86e87fdbc0] = 32
@@ -1944,7 +1944,7 @@ Compiled method (c2) 13268 15269 %     4       zone.oat.gmodtitlescreen.screen.C
                       ; - net.minecraft.client.gui.DrawContext::drawTexture@53 (line 439)
                       ; - net.minecraft.client.gui.DrawContext::drawTexture@23 (line 435)
                       ; - net.minecraft.client.gui.DrawContext::drawTexture@22 (line 431)
-                      ; - zone.oat.gmodtitlescreen.screen.CustomTitleScreen::renderBackground@169 (line 301)
+                      ; - screen.net.kazohy.guioverhaul.CustomTitleScreen::renderBackground@169 (line 301)
   0x00007a86e87fdd08: 44d2 ffff 
 
   0x00007a86e87fdd0c: ;   {post_call_nop}
@@ -1952,7 +1952,7 @@ Compiled method (c2) 13268 15269 %     4       zone.oat.gmodtitlescreen.screen.C
 
   0x00007a86e87fdd20: ; ImmutableOopMap {[32]=Oop }
                       ;*goto {reexecute=1 rethrow=0 return_oop=0}
-                      ; - (reexecute) zone.oat.gmodtitlescreen.screen.CustomTitleScreen::renderBackground@179 (line 300)
+                      ; - (reexecute) screen.net.kazohy.guioverhaul.CustomTitleScreen::renderBackground@179 (line 300)
                       ;   {poll}
   0x00007a86e87fdd20: 2410 4185 | 0244 895c | 241c eb84 | 4533 ede9 | fefe ffff | be76 ffff | ff4c 896c | 2410 895c 
   0x00007a86e87fdd40: 240c 4489 
@@ -1962,7 +1962,7 @@ Compiled method (c2) 13268 15269 %     4       zone.oat.gmodtitlescreen.screen.C
 
   0x00007a86e87fdd48: ; ImmutableOopMap {[16]=Oop }
                       ;*iload {reexecute=0 rethrow=0 return_oop=0}
-                      ; - zone.oat.gmodtitlescreen.screen.CustomTitleScreen::renderBackground@139 (line 300)
+                      ; - screen.net.kazohy.guioverhaul.CustomTitleScreen::renderBackground@139 (line 300)
   0x00007a86e87fdd48: 9474 18ff 
 
   0x00007a86e87fdd4c: ;   {post_call_nop}
@@ -1974,7 +1974,7 @@ Compiled method (c2) 13268 15269 %     4       zone.oat.gmodtitlescreen.screen.C
 
   0x00007a86e87fdd7c: ; ImmutableOopMap {[24]=Oop }
                       ;*iload {reexecute=0 rethrow=0 return_oop=0}
-                      ; - zone.oat.gmodtitlescreen.screen.CustomTitleScreen::renderBackground@139 (line 300)
+                      ; - screen.net.kazohy.guioverhaul.CustomTitleScreen::renderBackground@139 (line 300)
   0x00007a86e87fdd7c: 6074 18ff 
 
   0x00007a86e87fdd80: ;   {post_call_nop}

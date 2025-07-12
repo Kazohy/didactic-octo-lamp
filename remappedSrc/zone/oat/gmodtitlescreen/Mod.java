@@ -1,4 +1,4 @@
-package zone.oat.gmodtitlescreen;
+package net.kazohy.guioverhaul;
 
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.Toml4jConfigSerializer;

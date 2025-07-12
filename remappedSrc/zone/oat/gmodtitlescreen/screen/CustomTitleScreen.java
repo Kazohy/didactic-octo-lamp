@@ -1,4 +1,4 @@
-package zone.oat.gmodtitlescreen.screen;
+package net.kazohy.guioverhaul.screen;
 
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -30,9 +30,9 @@ import net.minecraft.util.Util;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.RotationAxis;
 import org.jetbrains.annotations.Nullable;
-import zone.oat.gmodtitlescreen.Mod;
-import zone.oat.gmodtitlescreen.ModIdentifier;
-import zone.oat.gmodtitlescreen.PressableTextWithTooltipWidget;
+import net.kazohy.guioverhaul.Mod;
+import net.kazohy.guioverhaul.ModIdentifier;
+import net.kazohy.guioverhaul.PressableTextWithTooltipWidget;
 
 import java.util.Random;
 import java.util.concurrent.CompletableFuture;

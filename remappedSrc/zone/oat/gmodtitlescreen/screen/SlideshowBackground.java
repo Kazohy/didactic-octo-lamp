@@ -1,4 +1,4 @@
-package zone.oat.gmodtitlescreen.screen;
+package net.kazohy.guioverhaul.screen;
 
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -11,7 +11,7 @@ import net.minecraft.client.util.math.Vector2f;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.RotationAxis;
-import zone.oat.gmodtitlescreen.ModIdentifier;
+import net.kazohy.guioverhaul.ModIdentifier;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;

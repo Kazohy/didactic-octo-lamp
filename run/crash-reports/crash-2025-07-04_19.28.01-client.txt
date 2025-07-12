@@ -5,7 +5,7 @@ Time: 2025-07-04 19:28:01
 Description: Rendering overlay
 
 java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 6
-	at knot//zone.oat.gmodtitlescreen.screen.CustomTitleScreen.render(CustomTitleScreen.java:403)
+	at knot//screen.net.kazohy.guioverhaul.CustomTitleScreen.render(CustomTitleScreen.java:403)
 	at knot//net.minecraft.client.gui.screen.SplashOverlay.render(SplashOverlay.java:83)
 	at knot//net.minecraft.client.render.GameRenderer.render(GameRenderer.java:540)
 	at knot//net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1341)
@@ -23,7 +23,7 @@ A detailed walkthrough of the error, its code path and all known details is as f
 -- Head --
 Thread: Render thread
 Stacktrace:
-	at knot//zone.oat.gmodtitlescreen.screen.CustomTitleScreen.render(CustomTitleScreen.java:403)
+	at knot//screen.net.kazohy.guioverhaul.CustomTitleScreen.render(CustomTitleScreen.java:403)
 	at knot//net.minecraft.client.gui.screen.SplashOverlay.render(SplashOverlay.java:83)
 
 -- Overlay render details --

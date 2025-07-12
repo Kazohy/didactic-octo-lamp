@@ -5,7 +5,7 @@ Time: 2025-06-21 13:14:51
 Description: Rendering overlay
 
 java.lang.NullPointerException: Cannot invoke "net.minecraft.server.integrated.IntegratedServer.getSaveProperties()" because the return value of "net.minecraft.client.MinecraftClient.getServer()" is null
-	at knot//zone.oat.gmodtitlescreen.screen.CustomTitleScreen.render(CustomTitleScreen.java:543)
+	at knot//screen.net.kazohy.guioverhaul.CustomTitleScreen.render(CustomTitleScreen.java:543)
 	at knot//net.minecraft.client.gui.screen.SplashOverlay.render(SplashOverlay.java:83)
 	at knot//net.minecraft.client.render.GameRenderer.render(GameRenderer.java:540)
 	at knot//net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1341)
@@ -23,7 +23,7 @@ A detailed walkthrough of the error, its code path and all known details is as f
 -- Head --
 Thread: Render thread
 Stacktrace:
-	at knot//zone.oat.gmodtitlescreen.screen.CustomTitleScreen.render(CustomTitleScreen.java:543)
+	at knot//screen.net.kazohy.guioverhaul.CustomTitleScreen.render(CustomTitleScreen.java:543)
 	at knot//net.minecraft.client.gui.screen.SplashOverlay.render(SplashOverlay.java:83)
 
 -- Overlay render details --

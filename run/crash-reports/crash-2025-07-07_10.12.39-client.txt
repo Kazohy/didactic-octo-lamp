@@ -4,14 +4,14 @@
 Time: 2025-07-07 10:12:39
 Description: Rendering overlay
 
-java.lang.RuntimeException: Mixin transformation of zone.oat.gmodtitlescreen.listener.WorldCreationListener failed
+java.lang.RuntimeException: Mixin transformation of listener.net.kazohy.guioverhaul.WorldCreationListener failed
 	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:427)
 	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:323)
 	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:218)
 	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
-	at knot//zone.oat.gmodtitlescreen.screen.CustomTitleScreen.takeScreenshot(CustomTitleScreen.java:613)
-	at knot//zone.oat.gmodtitlescreen.screen.CustomTitleScreen.render(CustomTitleScreen.java:585)
+	at knot//screen.net.kazohy.guioverhaul.CustomTitleScreen.takeScreenshot(CustomTitleScreen.java:613)
+	at knot//screen.net.kazohy.guioverhaul.CustomTitleScreen.render(CustomTitleScreen.java:585)
 	at knot//net.minecraft.client.gui.screen.SplashOverlay.render(SplashOverlay.java:83)
 	at knot//net.minecraft.client.render.GameRenderer.render(GameRenderer.java:540)
 	at knot//net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1341)
@@ -21,7 +21,7 @@ java.lang.RuntimeException: Mixin transformation of zone.oat.gmodtitlescreen.lis
 	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
 	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
-Caused by: org.spongepowered.asm.mixin.transformer.throwables.IllegalClassLoadError: zone.oat.gmodtitlescreen.listener.WorldCreationListener is in a defined mixin package zone.oat.gmodtitlescreen.mixin.* owned by gmod-title-screen.mixins.json and cannot be referenced directly
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.IllegalClassLoadError: listener.net.kazohy.guioverhaul.WorldCreationListener is in a defined mixin package net.kazohy.guioverhaul.mixin.* owned by gmod-title-screen.mixins.json and cannot be referenced directly
 	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:334)
 	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:234)
 	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202)
@@ -40,8 +40,8 @@ Stacktrace:
 	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:218)
 	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
-	at knot//zone.oat.gmodtitlescreen.screen.CustomTitleScreen.takeScreenshot(CustomTitleScreen.java:613)
-	at knot//zone.oat.gmodtitlescreen.screen.CustomTitleScreen.render(CustomTitleScreen.java:585)
+	at knot//screen.net.kazohy.guioverhaul.CustomTitleScreen.takeScreenshot(CustomTitleScreen.java:613)
+	at knot//screen.net.kazohy.guioverhaul.CustomTitleScreen.render(CustomTitleScreen.java:585)
 	at knot//net.minecraft.client.gui.screen.SplashOverlay.render(SplashOverlay.java:83)
 
 -- Overlay render details --

@@ -1,10 +1,10 @@
-package zone.oat.gmodtitlescreen.mixin;
+package net.kazohy.guioverhaul.mixin;
 
 import net.minecraft.client.texture.TextureManager;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
-import zone.oat.gmodtitlescreen.screen.CustomTitleScreen;
+import net.kazohy.guioverhaul.screen.CustomTitleScreen;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;

@@ -5,8 +5,8 @@ Time: 2025-07-06 19:36:21
 Description: Rendering overlay
 
 java.lang.NullPointerException: Cannot invoke "net.minecraft.server.integrated.IntegratedServer.getSavePath(net.minecraft.util.WorldSavePath)" because the return value of "net.minecraft.client.MinecraftClient.getServer()" is null
-	at knot//zone.oat.gmodtitlescreen.screen.CustomTitleScreen.takeScreenshot(CustomTitleScreen.java:611)
-	at knot//zone.oat.gmodtitlescreen.screen.CustomTitleScreen.render(CustomTitleScreen.java:583)
+	at knot//screen.net.kazohy.guioverhaul.CustomTitleScreen.takeScreenshot(CustomTitleScreen.java:611)
+	at knot//screen.net.kazohy.guioverhaul.CustomTitleScreen.render(CustomTitleScreen.java:583)
 	at knot//net.minecraft.client.gui.screen.SplashOverlay.render(SplashOverlay.java:83)
 	at knot//net.minecraft.client.render.GameRenderer.render(GameRenderer.java:540)
 	at knot//net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1341)
@@ -24,8 +24,8 @@ A detailed walkthrough of the error, its code path and all known details is as f
 -- Head --
 Thread: Render thread
 Stacktrace:
-	at knot//zone.oat.gmodtitlescreen.screen.CustomTitleScreen.takeScreenshot(CustomTitleScreen.java:611)
-	at knot//zone.oat.gmodtitlescreen.screen.CustomTitleScreen.render(CustomTitleScreen.java:583)
+	at knot//screen.net.kazohy.guioverhaul.CustomTitleScreen.takeScreenshot(CustomTitleScreen.java:611)
+	at knot//screen.net.kazohy.guioverhaul.CustomTitleScreen.render(CustomTitleScreen.java:583)
 	at knot//net.minecraft.client.gui.screen.SplashOverlay.render(SplashOverlay.java:83)
 
 -- Overlay render details --

@@ -1,2 +1,2 @@
 v1	named	intermediary
-FIELD	zone/oat/gmodtitlescreen/mixin/MinecraftClientMixin	Lnet/minecraft/client/texture/TextureManager;	textureManager	field_1764
+FIELD	net/kazohy/guioverhaul/mixin/MinecraftClientMixin	Lnet/minecraft/client/texture/TextureManager;	textureManager	field_1764

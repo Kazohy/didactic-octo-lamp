@@ -12,19 +12,31 @@ base {
 }
 
 repositories {
-    // Add repositories to retrieve artifacts from in here.
-    // You should only use this when depending on other mods because
-    // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-    // See https://docs.gradle.org/current/userguide/declaring_repositories.html
-    // for more information about repositories.
+    maven {
+        name = "Fabric"
+        url = "https://maven.fabricmc.net/"
+    }
 
-    // no longer needed, see dependencies below
-    // maven { url = "https://api.modrinth.com/maven" } // LazyDFU, Suggestion Tweaker
+    // Optional, just to be sure:
+    maven {
+        name = "Mojang"
+        url = "https://libraries.minecraft.net/"
+    }
+
+    // Default central
+    mavenCentral()
     maven { url = "https://maven.terraformersmc.com" } // Mod Menu
     maven { url = "https://maven.shedaniel.me/" } // Cloth Config
 }
 
 dependencies {
+    // Core Minecraft + Mappings
+    minecraft "com.mojang:minecraft:1.21.4"
+    mappings "net.fabricmc:yarn:1.21.4+build.7:v2"
+
+    // Fabric loader + API
+    modImplementation "net.fabricmc:fabric-loader:0.15.11"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.100.0+1.21.4"
     // To change the versions see the gradle.properties file
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
@@ -153,3 +165,5 @@ task publishToModSites {
     publishToModSites.dependsOn modrinth
     publishToModSites.dependsOn curseforge
 }
+
+

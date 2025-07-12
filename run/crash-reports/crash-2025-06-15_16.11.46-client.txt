@@ -16,8 +16,8 @@ Caused by: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] chara
 	at knot//net.minecraft.util.Identifier.validatePath(Identifier.java:285)
 	at knot//net.minecraft.util.Identifier.ofValidated(Identifier.java:48)
 	at knot//net.minecraft.util.Identifier.of(Identifier.java:52)
-	at knot//zone.oat.gmodtitlescreen.ModIdentifier.of(ModIdentifier.java:7)
-	at knot//zone.oat.gmodtitlescreen.screen.CustomTitleScreen.<clinit>(CustomTitleScreen.java:50)
+	at knot//net.kazohy.guioverhaul.ModIdentifier.of(ModIdentifier.java:7)
+	at knot//screen.net.kazohy.guioverhaul.CustomTitleScreen.<clinit>(CustomTitleScreen.java:50)
 	... 7 more
 
 

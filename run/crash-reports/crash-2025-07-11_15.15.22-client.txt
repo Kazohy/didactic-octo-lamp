@@ -1,0 +1,174 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 2025-07-11 15:15:22
+Description: Unexpected error
+
+java.lang.IllegalArgumentException: No model for layer minecraft:player#main
+	at knot//net.minecraft.client.render.entity.model.LoadedEntityModels.getModelPart(LoadedEntityModels.java:20)
+	at knot//net.minecraft.client.gui.widget.PlayerSkinWidget$Models.create(PlayerSkinWidget.java:97)
+	at knot//net.minecraft.client.gui.widget.PlayerSkinWidget.<init>(PlayerSkinWidget.java:44)
+	at knot//net.kazohy.guioverhaul.screen.CustomTitleScreen.init(CustomTitleScreen.java:156)
+	at knot//net.minecraft.client.gui.screen.Screen.init(Screen.java:308)
+	at knot//net.minecraft.client.MinecraftClient.setScreen(MinecraftClient.java:1192)
+	at knot//net.kazohy.guioverhaul.Mod.lambda$onInitializeClient$1(Mod.java:66)
+	at knot//net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents.lambda$static$2(ClientTickEvents.java:43)
+	at knot//net.minecraft.client.MinecraftClient.handler$zkj000$fabric-lifecycle-events-v1$onEndTick(MinecraftClient.java:4581)
+	at knot//net.minecraft.client.MinecraftClient.tick(MinecraftClient.java:1940)
+	at knot//net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1302)
+	at knot//net.minecraft.client.MinecraftClient.run(MinecraftClient.java:922)
+	at knot//net.minecraft.client.main.Main.main(Main.java:267)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at knot//net.minecraft.client.render.entity.model.LoadedEntityModels.getModelPart(LoadedEntityModels.java:20)
+	at knot//net.minecraft.client.gui.widget.PlayerSkinWidget$Models.create(PlayerSkinWidget.java:97)
+	at knot//net.minecraft.client.gui.widget.PlayerSkinWidget.<init>(PlayerSkinWidget.java:44)
+	at knot//net.kazohy.guioverhaul.screen.CustomTitleScreen.init(CustomTitleScreen.java:156)
+	at knot//net.minecraft.client.gui.screen.Screen.init(Screen.java:308)
+	at knot//net.minecraft.client.MinecraftClient.setScreen(MinecraftClient.java:1192)
+	at knot//net.kazohy.guioverhaul.Mod.lambda$onInitializeClient$1(Mod.java:66)
+	at knot//net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents.lambda$static$2(ClientTickEvents.java:43)
+	at knot//net.minecraft.client.MinecraftClient.handler$zkj000$fabric-lifecycle-events-v1$onEndTick(MinecraftClient.java:4581)
+
+-- Uptime --
+Details:
+	JVM uptime: 5.520s
+	Wall uptime: 1.466s
+	High-res time: 1.094s
+	Client ticks: 1 ticks / 0.050s
+Stacktrace:
+	at knot//net.minecraft.client.MinecraftClient.addDetailsToCrashReport(MinecraftClient.java:2371)
+	at knot//net.minecraft.client.MinecraftClient.printCrashReport(MinecraftClient.java:991)
+	at knot//net.minecraft.client.MinecraftClient.run(MinecraftClient.java:946)
+	at knot//net.minecraft.client.main.Main.main(Main.java:267)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: No
+	Packs: vanilla, fabric, cloth-config, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-gametest-api-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, gmod-title-screen, modmenu
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.4
+	Minecraft Version ID: 1.21.4
+	Operating System: Linux (amd64) version 6.12.36-1-lts
+	Java Version: 23.0.2, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 135528896 bytes (129 MiB) / 490733568 bytes (468 MiB) up to 3967811584 bytes (3784 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 7700 8-Core Processor
+	Identifier: AuthenticAMD Family 25 Model 97 Stepping 2
+	Microarchitecture: Zen 3
+	Frequency (GHz): -0.00
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: Raphael
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. [AMD/ATI] (0x1002)
+	Graphics card #0 VRAM (MiB): 258.00
+	Graphics card #0 deviceId: 0x164e
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MiB): 11660.22
+	Virtual memory used (MiB): 7784.11
+	Swap memory total (MiB): 4096.00
+	Swap memory used (MiB): 0.00
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 7452.50, total: 7564.22
+	Space in storage for workdir (MiB): available: 333437.38, total: 431242.31
+	JVM Flags: 0 total; 
+	Fabric Mods: 
+		cloth-basic-math: cloth-basic-math 0.6.1
+		cloth-config: Cloth Config v17 17.0.144
+		fabric-api: Fabric API 0.114.0+1.21.4
+		fabric-api-base: Fabric API Base 0.4.54+b47eab6b04
+		fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.86+b1caf1e904
+		fabric-biome-api-v1: Fabric Biome API (v1) 15.0.6+b1c29d8e04
+		fabric-block-api-v1: Fabric Block API (v1) 1.0.31+7feeb73304
+		fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.19+7feeb73304
+		fabric-blockrenderlayer-v1: Fabric BlockRenderLayer Registration (v1) 2.0.8+7feeb73304
+		fabric-client-gametest-api-v1: Fabric Client Game Test API (v1) 3.0.0+1f6471e604
+		fabric-client-tags-api-v1: Fabric Client Tags 1.1.29+20ea1e2304
+		fabric-command-api-v1: Fabric Command API (v1) 1.2.62+f71b366f04
+		fabric-command-api-v2: Fabric Command API (v2) 2.2.41+e496eb1504
+		fabric-commands-v0: Fabric Commands (v0) 0.2.79+df3654b304
+		fabric-content-registries-v0: Fabric Content Registries (v0) 9.1.14+7feeb73304
+		fabric-convention-tags-v1: Fabric Convention Tags 2.1.11+7f945d5b04
+		fabric-convention-tags-v2: Fabric Convention Tags (v2) 2.10.1+e7d3c6e504
+		fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.3.6+7feeb73304
+		fabric-data-attachment-api-v1: Fabric Data Attachment API (v1) 1.4.6+9aea556b04
+		fabric-data-generation-api-v1: Fabric Data Generation API (v1) 22.2.4+20ea1e2304
+		fabric-dimensions-v1: Fabric Dimensions API (v1) 4.0.10+7feeb73304
+		fabric-entity-events-v1: Fabric Entity Events (v1) 2.0.12+60fccc7604
+		fabric-events-interaction-v0: Fabric Events Interaction (v0) 4.0.2+a4eebcf004
+		fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.62+7feeb73304
+		fabric-gametest-api-v1: Fabric Game Test API (v1) 2.0.21+7feeb73304
+		fabric-item-api-v1: Fabric Item API (v1) 11.1.14+203e6b2304
+		fabric-item-group-api-v1: Fabric Item Group API (v1) 4.1.23+7feeb73304
+		fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.0.56+7feeb73304
+		fabric-keybindings-v0: Fabric Key Bindings (v0) 0.2.54+df3654b304
+		fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.5.4+bf2a60eb04
+		fabric-loot-api-v2: Fabric Loot API (v2) 3.0.33+3f89f5a504
+		fabric-loot-api-v3: Fabric Loot API (v3) 1.0.21+203e6b2304
+		fabric-message-api-v1: Fabric Message API (v1) 6.0.25+7feeb73304
+		fabric-model-loading-api-v1: Fabric Model Loading API (v1) 4.2.0+8ca2ae8d04
+		fabric-networking-api-v1: Fabric Networking API (v1) 4.3.9+f371ccb904
+		fabric-object-builder-api-v1: Fabric Object Builder API (v1) 18.0.8+d70d2c0604
+		fabric-particles-v1: Fabric Particles (v1) 4.0.14+7feeb73304
+		fabric-recipe-api-v1: Fabric Recipe API (v1) 8.0.6+9ceeb58c04
+		fabric-registry-sync-v0: Fabric Registry Sync (v0) 6.1.3+e7d3c6e504
+		fabric-renderer-api-v1: Fabric Renderer API (v1) 5.0.2+84404cdd04
+		fabric-renderer-indigo: Fabric Renderer - Indigo 2.0.2+84404cdd04
+		fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.3.57+73761d2e04
+		fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.1.19+7feeb73304
+		fabric-rendering-v1: Fabric Rendering (v1) 10.1.2+b874120c04
+		fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 5.0.13+203e6b2304
+		fabric-resource-loader-v0: Fabric Resource Loader (v0) 3.0.11+b1caf1e904
+		fabric-screen-api-v1: Fabric Screen API (v1) 2.0.38+7feeb73304
+		fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.110+7feeb73304
+		fabric-sound-api-v1: Fabric Sound API (v1) 1.0.32+7feeb73304
+		fabric-tag-api-v1: Fabric Tag API (v1) 1.0.2+20ea1e2304
+		fabric-transfer-api-v1: Fabric Transfer API (v1) 5.4.9+efa825c904
+		fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 6.3.2+56e78b9b04
+		fabricloader: Fabric Loader 0.16.9
+		gmod-title-screen: GMod Title Screen 1.3+1.21.4
+		java: OpenJDK 64-Bit Server VM 23
+		minecraft: Minecraft 1.21.4
+		mixinextras: MixinExtras 0.4.1
+		modmenu: Mod Menu 13.0.0-beta.1
+	Launched Version: Fabric
+	Backend library: LWJGL version 3.3.3-snapshot
+	Backend API: AMD Radeon Graphics (radeonsi, raphael_mendocino, LLVM 20.1.7, DRM 3.61, 6.12.36-1-lts) GL version 4.6 (Core Profile) Mesa 25.1.5-arch1.1, AMD
+	Window size: 854x480
+	GFLW Platform: x11
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Is Modded: Definitely; Client brand changed to 'fabric'
+	Universe: 400921fb54442d18
+	Type: Client (map_client.txt)
+	Graphics mode: fancy
+	Render Distance: 12/12 chunks
+	Resource Packs: vanilla, fabric, cloth-config, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-gametest-api-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, gmod-title-screen, modmenu
+	Current Language: en_us
+	Locale: en_US
+	System encoding: UTF-8
+	File encoding: UTF-8
+	CPU: 16x AMD Ryzen 7 7700 8-Core Processor

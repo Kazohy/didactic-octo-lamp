@@ -16,7 +16,7 @@ java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "pk" i
 	at knot//net.minecraft.client.gui.widget.TexturedButtonWidget.renderWidget(TexturedButtonWidget.java:28)
 	at knot//net.minecraft.client.gui.widget.ClickableWidget.render(ClickableWidget.java:66)
 	at knot//net.minecraft.client.gui.screen.Screen.render(Screen.java:127)
-	at knot//zone.oat.gmodtitlescreen.screen.CustomTitleScreen.render(CustomTitleScreen.java:352)
+	at knot//screen.net.kazohy.guioverhaul.CustomTitleScreen.render(CustomTitleScreen.java:352)
 	at knot//net.minecraft.client.gui.screen.SplashOverlay.render(SplashOverlay.java:83)
 	at knot//net.minecraft.client.render.GameRenderer.render(GameRenderer.java:540)
 	at knot//net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1341)
@@ -45,7 +45,7 @@ Stacktrace:
 	at knot//net.minecraft.client.gui.widget.TexturedButtonWidget.renderWidget(TexturedButtonWidget.java:28)
 	at knot//net.minecraft.client.gui.widget.ClickableWidget.render(ClickableWidget.java:66)
 	at knot//net.minecraft.client.gui.screen.Screen.render(Screen.java:127)
-	at knot//zone.oat.gmodtitlescreen.screen.CustomTitleScreen.render(CustomTitleScreen.java:352)
+	at knot//screen.net.kazohy.guioverhaul.CustomTitleScreen.render(CustomTitleScreen.java:352)
 	at knot//net.minecraft.client.gui.screen.SplashOverlay.render(SplashOverlay.java:83)
 
 -- Overlay render details --

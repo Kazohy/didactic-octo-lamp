@@ -19,10 +19,10 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "zone.oat.gmodtitlescreen.Mod"
+      "net.kazohy.guioverhaul.Mod"
     ],
     "modmenu": [
-      "zone.oat.gmodtitlescreen.ModMenuIntegration"
+      "net.kazohy.guioverhaul.ModMenuIntegration"
     ]
   },
   "mixins": [

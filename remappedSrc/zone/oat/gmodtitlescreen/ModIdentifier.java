@@ -1,4 +1,4 @@
-package zone.oat.gmodtitlescreen;
+package net.kazohy.guioverhaul;
 
 import net.minecraft.util.Identifier;
 
